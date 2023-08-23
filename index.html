@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Title -->
     <title>Naabi</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="./img/logo.png" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Preloader -->
     <div id="preloader">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <!-- /Preloader -->
 
     <!-- Top Search Form Area -->
     <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
+      <div
+        class="modal fade"
+        id="searchModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- Close -->
+              <button type="button" class="btn close-btn" data-dismiss="modal">
+                <i class="ti-close"></i>
+              </button>
+              <!-- Form -->
+              <form action="index.html" method="post">
+                <input
+                  type="search"
+                  name="top-search-bar"
+                  class="form-control"
+                  placeholder="Search and hit enter..."
+                />
+                <button type="submit">Search</button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Header Area Start -->
     <header class="header-area">
-        <!-- Main Header Start -->
-        <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Classy Menu -->
-                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+      <!-- Main Header Start -->
+      <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar justify-content-between" id="alimeNav">
+              <!-- Logo -->
+              <a class="nav-brand" href="./index.html"
+                ><img
+                  style="
+                    height: 50px;
+                    -webkit-filter: invert(100%);
+                    filter: invert(100%);
+                  "
+                  src="./img/logo.png"
+                  alt=""
+              /></a>
 
-                        <!-- Logo -->
-                        <a  class="nav-brand" href="./index.html"><img style="height: 50px; -webkit-filter: invert(100%);
-                            filter: invert(100%);" src="./img/logo.png" alt=""></a>
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"
+                  ><span></span><span></span><span></span
+                ></span>
+              </div>
 
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-                            <!-- Menu Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul id="nav">
-                                    <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#gallery">Gallery</a></li>
-                                    <!-- <li><a href="./blog.html">Blog</a></li> -->
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-
-                                <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
+              <!-- Menu -->
+              <div class="classy-menu">
+                <!-- Menu Close Button -->
+                <div class="classycloseIcon">
+                  <div class="cross-wrap">
+                    <span class="top"></span><span class="bottom"></span>
+                  </div>
                 </div>
-            </div>
+                <!-- Nav Start -->
+                <div class="classynav">
+                  <ul id="nav">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <!-- <li><a href="./blog.html">Blog</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+
+                  <!-- Search Icon -->
+                  <div
+                    class="search-icon"
+                    data-toggle="modal"
+                    data-target="#searchModal"
+                  >
+                    <i class="ti-search"></i>
+                  </div>
+                </div>
+                <!-- Nav End -->
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Header Area End -->
 
     <!-- Welcome Area Start -->
-    <section id = "home" class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style=" background-image: url(img/bg-img/2.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12 col-lg-8 col-xl-6">
-                            <div class="welcome-text">
-                                <h2 data-animation="bounceInDown" data-delay="900ms">Hello <br>I'm Manisha</h2>
-                                <p data-animation="bounceInDown" data-delay="500ms">
-                                a passionate graphic designer with a fresh perspective and a keen eye for detail. I've always been captivated by the power of visual communication, and I'm excited to bring my creativity to the world of design.
-                                </p>
-                                <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Get a Quote</a>
-                                    <a class="btn alime-btn mb-3 mb-sm-0 mr-4" href="mailto:hello.alime@gmail.com">Email us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="home" class="welcome-area">
+      <div class="welcome-slides owl-carousel">
+        <!-- Single Slide -->
+        <div
+          class="single-welcome-slide bg-img bg-overlay"
+          style="background-image: url(img/bg-img/2.jpg)"
+        >
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <!-- Welcome Text -->
+              <div class="col-12 col-lg-8 col-xl-6">
+                <div class="welcome-text">
+                  <h2 data-animation="bounceInDown" data-delay="900ms">
+                    Hello <br />I'm Manisha
+                  </h2>
+                  <p data-animation="bounceInDown" data-delay="500ms">
+                    a passionate graphic designer with a fresh perspective and a
+                    keen eye for detail. I've always been captivated by the
+                    power of visual communication, and I'm excited to bring my
+                    creativity to the world of design.
+                  </p>
+                  <div
+                    class="hero-btn-group"
+                    data-animation="bounceInDown"
+                    data-delay="100ms"
+                  >
+                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4"
+                      >Get a Quote</a
+                    >
+                    <a
+                      class="btn alime-btn mb-3 mb-sm-0 mr-4"
+                      href="mailto:hello.alime@gmail.com"
+                      >Email us</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Single Slide -->
-            <!-- <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+        <!-- Single Slide -->
+        <!-- <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                        
@@ -139,149 +188,218 @@
                     </div>
                 </div>
             </div> -->
-        </div>
+      </div>
     </section>
     <!-- Welcome Area End -->
 
     <!-- Gallery Area Start -->
     <div id="gallery" class="alime-portfolio-area section-padding-80 clearfix">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Projects Menu -->
-                    <div class="alime-projects-menu">
-                        <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            
-                            <button class="btn" data-filter=".nature">Brands</button>
-                            <button class="btn" data-filter=".human">Cinematic</button>
-                            <button class="btn" data-filter=".country">Covers</button>
-                            <button class="btn" data-filter=".video">Annonymous</button>
-                        </div>
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- Projects Menu -->
+            <div class="alime-projects-menu">
+              <div class="portfolio-menu text-center">
+                <button class="btn active" data-filter="*">All</button>
+
+                <button class="btn" data-filter=".nature">Brands</button>
+                <button class="btn" data-filter=".human">Cinematic</button>
+                <button class="btn" data-filter=".country">Covers</button>
+                <button class="btn" data-filter=".video">Annonymous</button>
+                <button class="btn" data-filter=".motion">Motion</button>
+              </div>
             </div>
-
-            <div class="row alime-portfolio">
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/cinematic/1.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/cinematic/1.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/anno/1.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/anno/1.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/covers/1.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/covers/1.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/cinematic/2.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/cinematic/2.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/brands/1.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/brands/1.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/anno/2.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/anno/2.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/cinematic/3.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/cinematic/3.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="700ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/brands/2.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/brands/2.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/anno/3.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/anno/3.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/cinematic/4.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/cinematic/4.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/covers/2.jpeg" alt="">
-                        <div class="hover-content">
-                            <a href="img/covers/2.jpeg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!-- extra -->
-            
-
-            <div class="row">
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
-                    <a href="./gallery.html" class="btn alime-btn btn-2 mt-15">View More</a>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="row alime-portfolio">
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/cinematic/1.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/cinematic/1.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/anno/1.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/anno/1.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/covers/1.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/covers/1.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/cinematic/2.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/cinematic/2.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/brands/1.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/brands/1.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item video mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/anno/2.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/anno/2.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-6 single_gallery_item motion mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/motion/1.gif" alt="" />
+              <div class="hover-content">
+                <a href="img/motion/1.gif" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-6 single_gallery_item motion mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/motion/3.gif" alt="" />
+              <div class="hover-content">
+                <a href="img/motion/3.gif" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-6 single_gallery_item motion mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/motion/14.gif" alt="" />
+              <div class="hover-content">
+                <a href="img/motion/14.gif" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/cinematic/3.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/cinematic/3.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item nature mb-30 wow fadeInUp"
+            data-wow-delay="700ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/brands/2.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/brands/2.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-6 single_gallery_item video mb-30 wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/anno/3.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/anno/3.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item human mb-30 wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/cinematic/4.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/cinematic/4.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Gallery Item -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_gallery_item country mb-30 wow fadeInUp"
+            data-wow-delay="500ms"
+          >
+            <div class="single-portfolio-content">
+              <img src="img/covers/2.jpeg" alt="" />
+              <div class="hover-content">
+                <a href="img/covers/2.jpeg" class="portfolio-img">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- extra -->
+
+        <div class="row">
+          <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+            <a href="./gallery.html" class="btn alime-btn btn-2 mt-15"
+              >View More</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Gallery Area End -->
 
@@ -304,101 +422,150 @@
         </div>
     </section> -->
 
-    <div id="about"  class="about-us-area section-padding-80-0 clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="about-us-content mb-80">
-                        <h3 class="wow fadeInUp" data-wow-delay="100ms">We Live For Passion</h3>
-                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">
-                            My journey in the world of design began at Arena Animations, where I received comprehensive training that equipped me with a solid foundation in design principles and techniques. As a recent graduate, I'm eager to channel my newfound knowledge into creating impactful designs that resonate with clients and audiences alike.                        </p>
-                        <p class="wow fadeInUp" data-wow-delay="400ms">
-                            My approach to design is driven by the belief that every project tells a unique story. I enjoy diving deep into the essence of each project, understanding its core message, and translating it into visuals that leave a lasting impression. Whether it's crafting an eye-catching logo, designing a user-friendly website, or bringing illustrations to life, I thrive on turning ideas into compelling visual experiences.                        </p>
-                        <a class="btn alime-btn btn-2 mt-30 wow fadeInUp" data-wow-delay="500ms" href="#">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <img src="img/bg-img/17.jpg" alt="">
-                        <div class="video-icon">
-                            <a href="https://www.youtube.com/watch?v=sSakBz_eYzQ" class="video-play-btn"><i class="arrow_triangle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <div id="about" class="about-us-area section-padding-80-0 clearfix">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="about-us-content mb-80">
+              <h3 class="wow fadeInUp" data-wow-delay="100ms">
+                We Live For Passion
+              </h3>
+              <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
+              <p class="wow fadeInUp" data-wow-delay="300ms">
+                My journey in the world of design began at Arena Animations,
+                where I received comprehensive training that equipped me with a
+                solid foundation in design principles and techniques. As a
+                recent graduate, I'm eager to channel my newfound knowledge into
+                creating impactful designs that resonate with clients and
+                audiences alike.
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="400ms">
+                My approach to design is driven by the belief that every project
+                tells a unique story. I enjoy diving deep into the essence of
+                each project, understanding its core message, and translating it
+                into visuals that leave a lasting impression. Whether it's
+                crafting an eye-catching logo, designing a user-friendly
+                website, or bringing illustrations to life, I thrive on turning
+                ideas into compelling visual experiences.
+              </p>
+              <a
+                class="btn alime-btn btn-2 mt-30 wow fadeInUp"
+                data-wow-delay="500ms"
+                href="#"
+                >Contact Us</a
+              >
             </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div
+              class="about-video-area mb-80 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <img src="img/anno/16.jpeg" alt="" />
+              <div class="video-icon">
+                <a
+                  href="https://www.youtube.com/watch?v=SuvbfM6BoRA"
+                  class="video-play-btn"
+                  ><i class="arrow_triangle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>Why Choose Us</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="section-heading text-center wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <h2>Why Choose Us</h2>
             </div>
-
-            <div class="row">
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-film" aria-hidden="true"></i>
-                        </div>
-                        <h4>High Quality Design</h4>
-                        <p>
-                            Passionately infusing each project with impeccable design, I create visual experiences that inspire and stand as a testament to my commitment to excellence</p>
-                    </div>
-                </div>
-
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </div>
-                        <h4>motion graphics</h4>
-                        <p>
-                            From captivating stills to dynamic motion graphics, I bring concepts to life through a seamless blend of design and motion.  because sometimes only pictures are not enough to express well.</p>
-                    </div>
-                </div>
-
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-camera" aria-hidden="true"></i>
-                        </div>
-                        <h4>State of the art Work</h4>
-                        <p>
-                            Pushing the boundaries of creativity, we consistently deliver state-of-the-art design that captivates and resonates. not only looks good but be with the trend also.
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="row">
+          <!-- Single Why Choose Area -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="why-choose-us-content text-center mb-80 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div class="chosse-us-icon">
+                <i class="fa fa-film" aria-hidden="true"></i>
+              </div>
+              <h4>High Quality Design</h4>
+              <p>
+                Passionately infusing each project with impeccable design, I
+                create visual experiences that inspire and stand as a testament
+                to my commitment to excellence
+              </p>
+            </div>
+          </div>
+
+          <!-- Single Why Choose Area -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="why-choose-us-content text-center mb-80 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div class="chosse-us-icon">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </div>
+              <h4>motion graphics</h4>
+              <p>
+                From captivating stills to dynamic motion graphics, I bring
+                concepts to life through a seamless blend of design and motion.
+                because sometimes only pictures are not enough to express well.
+              </p>
+            </div>
+          </div>
+
+          <!-- Single Why Choose Area -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="why-choose-us-content text-center mb-80 wow fadeInUp"
+              data-wow-delay="500ms"
+            >
+              <div class="chosse-us-icon">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+              </div>
+              <h4>State of the art Work</h4>
+              <p>
+                Pushing the boundaries of creativity, we consistently deliver
+                state-of-the-art design that captivates and resonates. not only
+                looks good but be with the trend also.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- about section End -->
 
     <!-- Follow Area Start -->
     <section class="follow-area clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Follow Instagram</h2>
-                        <p>@princeamitlali</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Follow Youtube</h2>
+              <a href="https://www.youtube.com/@NabiDigital" target="_blank">
+                <p>@NabiDigital</p></a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Instagram Feed Area -->
-        <div class="instragram-feed-area owl-carousel">
-            <!-- <div class="single-instagram-item">
+      <!-- Instagram Feed Area -->
+      <div class="instragram-feed-area owl-carousel">
+        <!-- <div class="single-instagram-item">
                 <img src="img/bg-img/11.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="#">
@@ -458,373 +625,465 @@
                     </a>
                 </div>
             </div> -->
-        
+
         <!-- expectations -->
         <div class="single-instagram-item">
-            <img src="img/cinematic/1.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/1.jpeg" class="portfolio-img">+</a>
-            </div>
+          <img src="img/cinematic/1.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/1.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/anno/1.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/anno/1.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/anno/1.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/1.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/covers/1.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/1.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/covers/1.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/1.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/cinematic/2.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/2.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/cinematic/2.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/2.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/brands/1.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/1.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/brands/1.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/1.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/anno/2.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/anno/2.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/anno/2.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/2.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/cinematic/3.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/3.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/cinematic/3.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/3.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/brands/2.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/2.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/brands/2.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/2.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/anno/3.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/anno/3.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/anno/3.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/3.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/cinematic/4.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/4.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/cinematic/4.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/4.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- Single Gallery Item -->
-    <div class="single-instagram-item">
-            <img src="img/covers/2.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/2.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-instagram-item">
+          <img src="img/covers/2.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/2.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    
-    <div class="single-instagram-item">
-            <img src="img/covers/3.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/3.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <div class="single-instagram-item">
+          <img src="img/covers/3.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/3.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/4.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/4.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/4.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/4.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/5.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/5.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/5.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/5.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/6.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/6.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/6.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/6.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/7.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/7.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/7.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/7.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/8.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/8.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/8.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/8.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/9.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/9.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/9.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/9.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/10.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/10.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/10.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/10.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/11.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/11.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/11.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/11.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/covers/12.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/covers/12.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/covers/12.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/covers/12.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- human -->
-    <div class="single-instagram-item">
-            <img src="img/cinematic/5.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/5.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- human -->
+        <div class="single-instagram-item">
+          <img src="img/cinematic/5.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/5.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/6.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/6.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/6.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/6.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/7.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/7.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/7.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/7.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/8.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/8.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/8.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/8.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/9.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/9.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/9.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/9.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/10.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/10.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/10.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/10.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/11.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/11.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/11.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/11.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/12.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/12.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/12.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/12.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/13.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/13.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/13.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/13.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/cinematic/14.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/cinematic/14.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/cinematic/14.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/cinematic/14.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    
-    <!-- nature -->
-    <div class="single-instagram-item">
-            <img src="img/brands/3.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/3.jpeg" class="portfolio-img">+</a>
-            </div>
+
+        <!-- nature -->
+        <div class="single-instagram-item">
+          <img src="img/brands/3.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/3.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/4.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/4.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/4.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/4.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/5.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/5.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/5.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/5.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/6.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/6.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/6.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/6.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/7.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/7.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/7.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/7.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/8.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/8.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/8.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/8.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/9.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/9.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/9.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/9.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/10.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/10.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/10.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/10.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/11.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/11.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/11.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/11.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/12.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/12.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/12.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/12.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <div class="single-instagram-item">
-            <img src="img/brands/13.jpeg" alt="">
-            <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-                <a href="img/brands/13.jpeg" class="portfolio-img">+</a>
-            </div>
+        <div class="single-instagram-item">
+          <img src="img/brands/13.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/brands/13.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
-    <!-- video  -->
-    <div class="single-instagram-item">
-    <img src="img/anno/4.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/4.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/5.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/5.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/6.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/6.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/7.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/7.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/8.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/8.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/9.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/9.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/10.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/10.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/11.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/11.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/12.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/12.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
-    <div class="single-instagram-item">
-    <img src="img/anno/13.jpeg" alt="">
-    <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
-    <a href="img/anno/13.jpeg" class="portfolio-img">+</a>
-    </div>
-    </div>
-    
-    
+        <!-- video  -->
+        <div class="single-instagram-item">
+          <img src="img/anno/4.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/4.jpeg" class="portfolio-img">+</a>
+          </div>
         </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/5.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/5.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/6.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/6.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/7.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/7.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/8.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/8.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/9.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/9.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/10.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/10.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/11.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/11.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/12.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/12.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+
+        <div class="single-instagram-item">
+          <img src="img/anno/13.jpeg" alt="" />
+          <div
+            class="instagram-hover-content text-center d-flex align-items-center justify-content-center"
+          >
+            <a href="img/anno/13.jpeg" class="portfolio-img">+</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Follow Area End -->
 
-     <!-- Breadcrumb Area Start -->
-     <!-- <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/38.jpg);">
+    <!-- Breadcrumb Area Start -->
+    <!-- <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/38.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -844,73 +1103,101 @@
     <!-- Breadcrumb Area End -->
 
     <!-- Contact Area Start -->
-    <div id = "contact" class="contact-area section-padding-80-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 class="contact-title mb-30">Let’s Work <br>Together</h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Email</p>
-                        <a href="mailto:info.deercreative@gmail.com">manisha010400@gmail.com</a>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Call Us</p>
-                        <a href="#">6202421727</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Visit Us</p>
-                        <a href="#">Vivaan Residency <br>Global Village , # 410.7th Cross. 3rd Main Road BEML Layout, near Global Village Rd, Back Gate, 7th Stage, Mailasandra, Bengaluru, Karnataka 560059</a>
-                    </div>
-                </div>
+    <div id="contact" class="contact-area section-padding-80-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="contact-title mb-30">Let’s Work <br />Together</h2>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- Contact Info -->
+            <div class="contact-info mb-30">
+              <p>Email</p>
+              <a href="mailto:info.deercreative@gmail.com"
+                >manisha010400@gmail.com</a
+              >
             </div>
+            <!-- Contact Info -->
+            <div class="contact-info mb-30">
+              <p>Call Us</p>
+              <a href="#">9117941587</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- Contact Info -->
+            <div class="contact-info mb-30">
+              <p>Visit Us</p>
+              <a href="#"
+                >Near NIFT Patna <br />MithaPur Patna - 1</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Contact Area End -->
 
     <!-- Map Area Start -->
     <div class="map-area section-padding-0-80">
-        <div class="container">
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.906030998403!2d77.49777377463106!3d12.913760816144663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f1c4bab60f5%3A0x11e5ce6c9e2469ae!2sVIVAAN%20RESIDENCY%20PG%20for%20Gents%20%26%20Service%20Apartments!5e0!3m2!1sen!2sin!4v1691669478686!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      <div class="container">
+        <div id="map">
+          <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28782.604710516225!2d85.10402426461032!3d25.61071120607453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed586fc7617d19%3A0xc07ed5a35fa792e2!2sNational%20Institute%20of%20Fashion%20Technology!5e0!3m2!1sen!2sin!4v1692776224049!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+      </div>
     </div>
     <!-- Map Area End -->
 
     <!-- Footer Area Start -->
     <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-content d-flex align-items-center justify-content-between">
-                        <!-- Copywrite Text -->
-                        <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://github.com/princeamitlali" target="_blank">Prince Amit</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="#"><img style="height: 40px;" src="img/logo.png" alt=""></a>
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
-                            <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="footer-content d-flex align-items-center justify-content-between"
+            >
+              <!-- Copywrite Text -->
+              <div class="copywrite-text">
+                <p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                  <a href="https://github.com/princeamitlali" target="_blank"
+                    >NABI DIGITAL</a
+                  >
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+              <!-- Footer Logo -->
+              <div class="footer-logo">
+                <a href="#"
+                  ><img style="height: 40px" src="img/logo.png" alt=""
+                /></a>
+              </div>
+              <!-- Social Info -->
+              <div class="social-info">
+                <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                <a href="#"
+                  ><i class="ti-twitter-alt" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="ti-pinterest" aria-hidden="true"></i></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- Footer Area End -->
 
@@ -925,7 +1212,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-
-</body>
-
+  </body>
 </html>
